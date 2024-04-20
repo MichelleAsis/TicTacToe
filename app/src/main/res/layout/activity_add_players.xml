@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebg2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddPlayers">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="477dp"
+        android:layout_height="448dp"
+        android:layout_marginTop="-80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boxes" />
+
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:background="@drawable/transparent_bg"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/backbutt" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="328dp"
+        android:layout_height="334dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:background="@drawable/transparent_bg"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/transparent_bg"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter nickname"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerOne"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/whiteborder"
+                android:drawableLeft="@drawable/icon_dia"
+                android:drawablePadding="8dp"
+                android:hint="Enter player one name"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+
+                android:textSize="7pt"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/playerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/whiteborder"
+                android:drawableLeft="@drawable/icon_hearr"
+                android:drawablePadding="8dp"
+                android:hint="Enter player two name"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="7pt"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/startGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/boxes"
+                android:text="Let's Tic Tac Trick!"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
